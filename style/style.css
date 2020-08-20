@@ -1,0 +1,83 @@
+body {
+  background-color: #fafafa;
+}
+
+.lcnav {
+  background-color: #f67280;
+  color: #fafafa;
+  border-radius: 0 0 1.2rem 1.2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.lcnav .lcbrand {
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+
+.introContainer {
+  background-color: #f67280;
+  padding: 0;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.introContainer > div {
+  background-color: #fafafa;
+  border-radius: 1.2rem 1.2rem 0 0;
+  position: relative;
+  top: 5px;
+}
+
+.intro, .input {
+  width: 80vw;
+  min-width: 300px;
+}
+
+.intro h1, .input h1 {
+  color: #f67280;
+  font-weight: bolder;
+}
+
+.btn {
+  background-color: #f67280;
+  color: #fafafa;
+  font-size: x-large;
+  border-radius: 50rem;
+}
+
+.btn strong {
+  margin: 0 1rem;
+}
+
+.form-group .inputHeading {
+  color: #f67280;
+  font-weight: bolder;
+  margin: 0;
+  text-align: left;
+}
+
+.form-group .form-control {
+  border-color: #f67280;
+  border-width: 2px;
+  border-radius: 50rem;
+}
+
+.share {
+  height: 50px;
+  width: 50px;
+  border-radius: 50rem;
+  background-color: #f67280;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.share img {
+  width: 40px;
+}
+
+footer {
+  background-color: #f67280;
+  border-radius: 1.2rem 1.2rem 0 0;
+  color: #fafafa;
+  height: 75px;
+}
+/*# sourceMappingURL=style.css.map */

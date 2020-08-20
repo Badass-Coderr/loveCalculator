@@ -1,0 +1,80 @@
+$themePink : #f67280;
+$themeWhite : #fafafa;
+$curvedBottomBorder : 0 0 1.2rem 1.2rem;
+$curvedTopBorder : 1.2rem 1.2rem 0 0;
+
+body{
+    background-color: $themeWhite;
+}
+
+.lcnav{
+    background-color: $themePink;
+    color: $themeWhite;
+    border-radius: $curvedBottomBorder;
+    padding: 0.5rem 1.5rem;
+    .lcbrand{
+        font-size: 1.9rem;
+        font-weight: bolder;
+    }
+}
+
+.introContainer{
+    background-color: $themePink;
+    padding: 0;
+    border-radius: $curvedTopBorder;
+    >div{
+        background-color: $themeWhite;
+        border-radius: $curvedTopBorder;
+        position: relative;
+        top: 5px;
+    }
+}
+.intro , .input{
+    width: 80vw;
+    min-width: 300px;
+    h1{
+        color: $themePink;
+        font-weight: bolder;
+    }
+}
+.btn{
+    background-color: $themePink;
+    color: $themeWhite;
+    font-size: x-large;
+    border-radius: 50rem;
+    strong{
+        margin: 0 1rem;
+    }
+}
+.form-group{
+    .inputHeading{
+        color: $themePink;
+        font-weight: bolder;
+        margin: 0;
+        text-align: left;
+    }
+    .form-control{
+        border-color: $themePink;
+        border-width: 2px;
+        border-radius: 50rem;
+    }
+}
+
+.share{
+    height: 50px;
+    width: 50px;
+    border-radius: 50rem;
+    background-color: $themePink;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    img{
+        width: 40px;
+    }
+}
+
+footer{
+    background-color: $themePink;
+    border-radius: $curvedTopBorder;
+    color: $themeWhite;
+    height: 75px;
+}
