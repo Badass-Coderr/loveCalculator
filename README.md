@@ -4,7 +4,7 @@ Love % calculator on the basis of couples names
 For now we have just made it for mobiles, so just compress the browser window into a mobile view.
 
 
-##Lc-v- percentage update
+## Lc-v- percentage update
 - a temporary score page added. File name percent.hbs
 - Form working added,
 - node server
@@ -15,7 +15,7 @@ For now we have just made it for mobiles, so just compress the browser window in
   - Templates are in "templates" folder.
 
 
-###Info:
+### Info:
 server port : 3000
 **Note: As it is in testing phase, failing condition have not been added for the result.** 
 
