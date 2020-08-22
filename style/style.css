@@ -1,5 +1,7 @@
 body {
   background-color: #fafafa;
+  font-family: 'Arima Madurai', cursive;
+  font-weight: 900;
 }
 
 .lcnav {
@@ -12,6 +14,7 @@ body {
 .lcnav .lcbrand {
   font-size: 1.9rem;
   font-weight: bolder;
+  font-family: 'Lobster Two', cursive;
 }
 
 .introContainer {
@@ -34,6 +37,7 @@ body {
 
 .intro h1, .input h1 {
   color: #f67280;
+  font-family: 'Lobster Two', cursive;
   font-weight: bolder;
 }
 
@@ -45,6 +49,7 @@ body {
 }
 
 .btn strong {
+  font-family: 'Lobster Two', cursive;
   margin: 0 1rem;
 }
 

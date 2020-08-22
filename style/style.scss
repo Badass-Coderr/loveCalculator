@@ -3,8 +3,14 @@ $themeWhite : #fafafa;
 $curvedBottomBorder : 0 0 1.2rem 1.2rem;
 $curvedTopBorder : 1.2rem 1.2rem 0 0;
 
+
+// font-family: 'Arima Madurai', cursive;
+// font-family: 'Lobster Two', cursive;
+// font-family: 'Sofia', cursive;
 body{
     background-color: $themeWhite;
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 900;
 }
 
 .lcnav{
@@ -12,9 +18,11 @@ body{
     color: $themeWhite;
     border-radius: $curvedBottomBorder;
     padding: 0.5rem 1.5rem;
+
     .lcbrand{
         font-size: 1.9rem;
         font-weight: bolder;
+        font-family: 'Lobster Two', cursive;
     }
 }
 
@@ -34,6 +42,7 @@ body{
     min-width: 300px;
     h1{
         color: $themePink;
+        font-family: 'Lobster Two', cursive;
         font-weight: bolder;
     }
 }
@@ -43,6 +52,7 @@ body{
     font-size: x-large;
     border-radius: 50rem;
     strong{
+        font-family: 'Lobster Two', cursive;
         margin: 0 1rem;
     }
 }
