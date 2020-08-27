@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 //File reading
 let rawData = fs.readFileSync("./description.json");
 let description = JSON.parse(rawData);
-console.log(description);
+console.log("Server has started at port 3000 ........");
 
 // Routes
 
