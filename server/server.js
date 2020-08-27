@@ -23,7 +23,7 @@ app.use(express.static(publicDirectory));
 // hbs setup
 
 app.set('view engine','hbs');
-app.set('views',viewsDirectory)
+app.set('views',viewsDirectory);
 hbs.registerPartials(partialsDirectory);
 
 //bodyParser setup
