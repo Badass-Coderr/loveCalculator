@@ -1,3 +1,5 @@
+//jshint esversion:6
+
 // modules
 
 const fs = require("fs");
@@ -21,7 +23,7 @@ app.use(express.static(publicDirectory));
 // hbs setup
 
 app.set('view engine','hbs');
-app.set('views',viewsDirectory)
+app.set('views',viewsDirectory);
 hbs.registerPartials(partialsDirectory);
 
 //bodyParser setup
@@ -29,6 +31,7 @@ hbs.registerPartials(partialsDirectory);
 app.use(bodyParser.urlencoded({extended: true}));
 
 //File reading
+
 let rawData = fs.readFileSync("./description.json");
 let description = JSON.parse(rawData);
 console.log("Server has started at port 3000 ........");

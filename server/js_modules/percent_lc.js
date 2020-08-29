@@ -61,5 +61,5 @@ this.percent = function(name1,name2) {
     }
 
     return (a[0]*10) + a[1];
-}
-}
+};
+};
