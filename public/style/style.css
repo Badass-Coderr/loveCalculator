@@ -67,16 +67,21 @@ body {
 }
 
 .share {
-  height: 50px;
-  width: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 230px;
+}
+
+.shareIcon {
   border-radius: 50rem;
   background-color: #f67280;
   margin: 0.5rem;
   padding: 0.5rem;
 }
 
-.share img {
-  width: 40px;
+.shareIcon img {
+  width: 30px;
 }
 
 footer {

@@ -71,14 +71,17 @@ body{
 }
 
 .share{
-    height: 50px;
-    width: 50px;
+    justify-content: center;
+    max-width: 230px;
+}
+
+.shareIcon{
     border-radius: 50rem;
     background-color: $themePink;
     margin: 0.5rem;
     padding: 0.5rem;
     img{
-        width: 40px;
+        width: 30px;
     }
 }
 
