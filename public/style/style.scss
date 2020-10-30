@@ -39,12 +39,22 @@ body{
 }
 .intro , .input{
     width: 80vw;
-    min-width: 300px;
+    min-width: 310px;
     h1{
         color: $themePink;
         font-family: 'Lobster Two', cursive;
         font-weight: bolder;
     }
+}
+.intro h4{
+    font-size: 1.4rem;
+}
+.intro .percent{
+    font-size: 3rem;
+}
+.intro p{
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 .btn{
     background-color: $themePink;
