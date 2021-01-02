@@ -19,11 +19,11 @@ const partialsDirectory = path.join(__dirname,"/../templates/partials");
 
 const app = express();
 app.use(express.static(publicDirectory));
+app.set('view engine','hbs');
+app.set('views',viewsDirectory);
 
 // hbs setup
 
-app.set('view engine','hbs');
-app.set('views',viewsDirectory);
 hbs.registerPartials(partialsDirectory);
 
 //bodyParser setup
