@@ -58,11 +58,13 @@ app.get('/result',(req,res) => {
         resultDesc = description[2].desc;
     else
         resultDesc = description[3].desc;
-    res.render("percent",{
-        title : "Score",
-        score : result + "%",
-        desc : resultDesc
-    });
+    // res.render("percent",{
+    //     title : "Score",
+    //     score : result + "%",
+    //     desc : resultDesc
+    // });
+
+    res.send({result,resultDesc});
 });
 
 app.listen(3000);
