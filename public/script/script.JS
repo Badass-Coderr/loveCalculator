@@ -3,12 +3,18 @@
 const calculator = document.querySelector(".calculator");
 const formBox = document.querySelector(".form");
 const resultBox = document.querySelector(".result");
+const loadAnimation = document.querySelector(".loading");
 
 document.querySelector(".try-it").addEventListener('click',() => {
     if(calculator.classList.contains("hidden"))
         calculator.classList.remove("hidden");
+
     if(formBox.classList.contains("hidden"))
         formBox.classList.remove("hidden");
+
+    if(!loadAnimation.classList.contains("hidden"))
+        loadAnimation.classList.add("hidden");
+
     if(!resultBox.classList.contains("hidden"))
         resultBox.classList.add("hidden");
 });
@@ -29,7 +35,11 @@ form.addEventListener('submit',(evt) => {
                     percent.innerHTML = data.result + '%';
                     desc.innerHTML = data.resultDesc;
                     formBox.classList.add("hidden");
-                    resultBox.classList.remove("hidden");
+                    loadAnimation.classList.remove("hidden");
+                    setTimeout(()=>{
+                        resultBox.classList.remove("hidden");
+                        loadAnimation.classList.add("hidden");
+                    },5000);
                 });
         });
 
