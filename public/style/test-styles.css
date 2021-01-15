@@ -3,3 +3,30 @@ html {
 }
 .hidden {display: none;}
 .description {text-align: justify}
+.loading img {
+    width: 20%;
+    animation: up-down 1s linear none infinite;
+}
+.loading img:first-child,
+.loading img:last-child {
+    width: 10%;
+    animation: up-down 1s linear none infinite reverse;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-30%);
+    }
+
+    75% {
+        transform: translateY(30%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

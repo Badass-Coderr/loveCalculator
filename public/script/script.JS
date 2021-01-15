@@ -1,4 +1,5 @@
 // jshint esversion:6
+
 const calculator = document.querySelector(".calculator");
 const formBox = document.querySelector(".form");
 const resultBox = document.querySelector(".result");
