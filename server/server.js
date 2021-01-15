@@ -44,10 +44,10 @@ app.get('/',(req,res) => {
     });
 });
 
-app.post('/',(req,res) => {
-    console.log(req.body);
-    let name1 = req.body.name_1,
-        name2 = req.body.name_2;
+app.get('/result',(req,res) => {
+    console.log(req.query);
+    let name1 = req.query.name_1,
+        name2 = req.query.name_2;
     let result = percent(name1,name2);
     let resultDesc;
     if(result < 25)
