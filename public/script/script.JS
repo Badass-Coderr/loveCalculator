@@ -1,5 +1,7 @@
 // jshint esversion:6
 
+const formBox = document.querySelector(".form");
+const resultBox = document.querySelector(".result");
 const form = document.querySelector(".form > form");
 const names = document.querySelectorAll(".name");
 const percent = document.querySelector(".percent");
@@ -15,6 +17,8 @@ form.addEventListener('submit',(evt) => {
                 .then((data) => {
                     percent.innerHTML = data.result + '%';
                     desc.innerHTML = data.resultDesc;
+                    formBox.classList.add("hidden");
+                    resultBox.classList.remove("hidden");
                 });
         });
 

@@ -4,9 +4,8 @@
   "description": "This is a love calculator that gives love percentage.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
-    "dev-start": "nodemon server/server.js -e js,hbs,css"
+    "dev": "nodemon server/server.js -e js,hbs,css"
   },
   "author": "",
   "repository": {
