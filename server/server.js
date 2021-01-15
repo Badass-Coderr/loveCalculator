@@ -39,9 +39,7 @@ console.log("Server has started at port 3000 ........");
 // Routes
 
 app.get('/',(req,res) => {
-    res.render("index",{
-        title : "Calculate the percentage"
-    });
+    res.render("index");
 });
 
 app.get('/result',(req,res) => {

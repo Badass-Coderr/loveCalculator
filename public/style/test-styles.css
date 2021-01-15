@@ -1,2 +1,5 @@
+html {
+    scroll-behavior: smooth;
+}
 .hidden {display: none;}
 .description {text-align: justify}

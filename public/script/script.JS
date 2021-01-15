@@ -1,7 +1,17 @@
 // jshint esversion:6
-
+const calculator = document.querySelector(".calculator");
 const formBox = document.querySelector(".form");
 const resultBox = document.querySelector(".result");
+
+document.querySelector(".try-it").addEventListener('click',() => {
+    if(calculator.classList.contains("hidden"))
+        calculator.classList.remove("hidden");
+    if(formBox.classList.contains("hidden"))
+        formBox.classList.remove("hidden");
+    if(!resultBox.classList.contains("hidden"))
+        resultBox.classList.add("hidden");
+});
+
 const form = document.querySelector(".form > form");
 const names = document.querySelectorAll(".name");
 const percent = document.querySelector(".percent");

@@ -4,7 +4,7 @@
 <head>
     {{>meta}}
     <link rel="stylesheet" href="./style/test-styles.css">
-    <title>Love Calculator | {{title}}</title>
+    <title>Love Calculator | Get Your Love Score</title>
 </head>
 
 <body class="colorWhite">
@@ -27,13 +27,13 @@
                 {{!-- <h1>Calculate</h1> --}}
                 <h4 class="mt-2"> Do you have feelings for someone and not sure whether they feel the same for you or not? Or not sure about your relationship?
 Here is our Love Calculator for your help.</h4>
-                <button class="btn colorTheme my-4"><strong>Try it</strong></button>
+                <a class="try-it btn colorTheme my-4" href="#love-cal"><strong>Try it</strong></a>
             </div>
 
             <!-- Input section -->
-            <div class="container input mt-5">
+            <div class="calculator container input mt-5 hidden">
 
-                <div class="form">
+                <div class="form" id="love-cal">
                     <h1>Calculate</h1>
                     <form class="mx-auto mt-5 col-11" action="/" >
                         <div class="form-group">
