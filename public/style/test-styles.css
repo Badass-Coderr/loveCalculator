@@ -2,9 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
-.hidden {display: none;}
-
 .description {text-align: justify}
+
+.loading {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .loading img {
     width: 20%;
@@ -15,6 +20,9 @@ html {
     width: 10%;
     animation: up-down 2s linear none infinite reverse;
 }
+
+.hidden {display: none;}
+
 
 @keyframes up-down {
     0% {
