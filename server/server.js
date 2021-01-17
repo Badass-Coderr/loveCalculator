@@ -46,23 +46,33 @@ app.get('/result',(req,res) => {
     console.log(req.query);
     let name1 = req.query.name_1,
         name2 = req.query.name_2;
-    let result = percent(name1,name2);
-    let resultDesc;
-    if(result < 25)
-        resultDesc = description[0].desc;
-    else if(result <50)
-        resultDesc = description[1].desc;
-    else if(result <75)
-        resultDesc = description[2].desc;
-    else
-        resultDesc = description[3].desc;
-    // res.render("percent",{
-    //     title : "Score",
-    //     score : result + "%",
-    //     desc : resultDesc
-    // });
+    
+    let reg = /[^a-zA-Z ]/g;
 
-    res.send({result,resultDesc});
+    if(name1.match(reg) || name2.match(reg))
+    {
+        res.send({
+            err: "Illegal input provided",
+            errDesc: "Input can only contain characters between A-Z, a-z and spaces"
+        });
+    }
+    
+    else
+    {
+        let result = percent(name1,name2);
+        let resultDesc = "";
+        if(result < 25)
+            resultDesc = description[0].desc;
+        else if(result <50)
+            resultDesc = description[1].desc;
+        else if(result <75)
+            resultDesc = description[2].desc;
+        else
+            resultDesc = description[3].desc;
+
+        res.send({result,resultDesc});
+    }
+    
 });
 
 app.listen(3000);

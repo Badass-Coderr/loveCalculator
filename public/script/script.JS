@@ -36,16 +36,31 @@ form.addEventListener('submit',(evt) => {
         .then((res) => {
             res.json()
                 .then((data) => {
+                    
+                    if(data.err)
+                    {
+                        console.log(data);
+                        formBox.classList.add("hidden");
+                        loadAnimation.classList.remove("hidden");
+                        setTimeout(()=>{
+                            formBox.classList.remove("hidden");
+                            loadAnimation.classList.add("hidden");
+                            form.reset();
+                            alert(data.err + ': ' + data.errDesc);
+                        },5000);
+                    }
+                    else
+                    {
+                        percent.innerHTML = data.result + '%';
+                        desc.innerHTML = data.resultDesc;
 
-                    percent.innerHTML = data.result + '%';
-                    desc.innerHTML = data.resultDesc;
-
-                    formBox.classList.add("hidden");
-                    loadAnimation.classList.remove("hidden");
-                    setTimeout(()=>{
-                        resultBox.classList.remove("hidden");
-                        loadAnimation.classList.add("hidden");
-                    },5000);
+                        formBox.classList.add("hidden");
+                        loadAnimation.classList.remove("hidden");
+                        setTimeout(()=>{
+                            resultBox.classList.remove("hidden");
+                            loadAnimation.classList.add("hidden");
+                        },5000);
+                    }
                 });
         });
 
