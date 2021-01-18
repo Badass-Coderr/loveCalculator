@@ -26,6 +26,16 @@ const names = document.querySelectorAll(".name");
 const percent = document.querySelector(".percent");
 const desc = document.querySelector(".description");
 
+names.forEach((name) => {
+    name.addEventListener('input',() => {
+        console.log(name.value);
+        if(name.value.match(/[^a-zA-Z ]+/g))
+            name.setCustomValidity("Name can only contain characters between a-z, A-Z and spaces.");
+        else
+            name.setCustomValidity("");
+    });
+});
+
 form.addEventListener('submit',(evt) => {
     evt.preventDefault();
 
