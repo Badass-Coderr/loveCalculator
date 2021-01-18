@@ -49,7 +49,15 @@ app.get('/result',(req,res) => {
     
     let reg = /[^a-zA-Z ]/g;
 
-    if(name1.match(reg) || name2.match(reg))
+    if(!name1.length || !name2.length)
+    {
+        res.send({
+            err: "Missing Input",
+            errDesc: "Required Input was not provided by the user."
+        });
+    }
+
+    else if(name1.match(reg) || name2.match(reg))
     {
         res.send({
             err: "Illegal input provided",
