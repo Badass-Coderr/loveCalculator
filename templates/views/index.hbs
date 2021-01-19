@@ -3,8 +3,8 @@
 
 <head>
     {{>meta}}
-
-    <title>Love Calculator | {{title}}</title>
+    <link rel="stylesheet" href="./style/test-styles.css">
+    <title>Love Calculator | Get Your Love Score</title>
 </head>
 
 <body class="colorWhite">
@@ -27,31 +27,46 @@
                 {{!-- <h1>Calculate</h1> --}}
                 <h4 class="mt-2"> Do you have feelings for someone and not sure whether they feel the same for you or not? Or not sure about your relationship?
 Here is our Love Calculator for your help.</h4>
-                <button class="btn colorTheme my-4"><strong>Try it</strong></button>
+                <a class="try-it btn colorTheme my-4" href="#love-cal"><strong>Try it</strong></a>
             </div>
 
             <!-- Input section -->
-            <div class="container input mt-5">
-                <h1>Calculate</h1>
-                <form class="mx-auto mt-5 col-11" action="/" method="POST">
-                    <div class="form-group">
-                        <label for="name_1" class="inputHeading">Your Name</label>
-                        <input type="text" class="form-control" id="name_1" name="name_1" required>
-                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small> -->
-                    </div>
-                    <div class="form-group">
-                        <label for="name_2" class="inputHeading">Partner's Name</label>
-                        <input type="text" class="form-control" id="name_2" name="name_2" required>
-                    </div>
-                    <div class="form-group form-check mb-0 mt-5 p-0">
-                        <small class="form-check-label" for="exampleCheck1">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                            I accept your<br>terms and conditions
-                        </small>
-                    </div>
-                    <button type="submit" class="btn colorTheme"><strong>Calculate</strong></button>
-                </form>
+            <div class="calculator container input mt-5">
+
+                <div class="form hidden" id="love-cal">
+                    <h1>Calculate</h1>
+                    <form class="mx-auto mt-5 col-11" action="/" >
+                        <div class="form-group">
+                            <label for="name_1" class="inputHeading">Your Name</label>
+                            <input type="text" class="name form-control" id="name_1" name="name_1" required>
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="name_2" class="inputHeading">Partner's Name</label>
+                            <input type="text" class="name form-control" id="name_2" name="name_2" required>
+                        </div>
+                        <div class="form-group form-check mb-0 mt-5 p-0">
+                            <small class="form-check-label" for="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                I accept your<br>terms and conditions
+                            </small>
+                        </div>
+                        <button type="submit" class="btn colorTheme"><strong>Calculate</strong></button>
+                    </form>
+                </div>
+
+                <div class="loading hidden">
+                    <img src="./svg/load-heart-left.svg" alt="heart-icon">
+                    <img src="./svg/load-heart-mid.svg" alt="heart-icon">
+                    <img src="./svg/load-heart-right.svg" alt="heart-icon">
+                </div>
+
+                <div class="result hidden">
+                    <h1 class="percent">Lorem n Ipsum</h1>
+                    <p class="description mx-auto mt-5 col-11">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
             </div>
         </div>
     </div>

@@ -1,0 +1,43 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.description {text-align: justify}
+
+.loading {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading img {
+    width: 20%;
+    animation: up-down 2s linear none infinite;
+}
+.loading img:first-child,
+.loading img:last-child {
+    width: 10%;
+    animation: up-down 2s linear none infinite reverse;
+}
+
+.hidden {display: none;}
+
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-30%);
+    }
+
+    75% {
+        transform: translateY(30%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

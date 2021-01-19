@@ -11,9 +11,9 @@ this.percent = function(name1,name2) {
     // Arrange the string parameters is specific order and assign the value to the string to be checked
 
     if (name1.localeCompare(name2) > 0)
-        str = name1 + "love" + name2;
+        str = name1.toLowerCase() + "love" + name2.toLowerCase();
     else
-        str = name2 + "love" + name1;
+        str = name2.toLowerCase() + "love" + name1.toLowerCase();
 
     // Extract no. of instances of each element of the string present in that string
 
