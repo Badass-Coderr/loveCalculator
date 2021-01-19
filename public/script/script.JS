@@ -6,6 +6,8 @@ const form = document.querySelector(".form > form");
 const resultBox = document.querySelector(".result");
 const loadAnimation = document.querySelector(".loading");
 
+/* Form Initialization and Reset */
+
 document.querySelector(".try-it").addEventListener('click',() => {
     if(calculator.classList.contains("hidden"))
         calculator.classList.remove("hidden");
@@ -26,6 +28,8 @@ const names = document.querySelectorAll(".name");
 const percent = document.querySelector(".percent");
 const desc = document.querySelector(".description");
 
+/* INPUT VALIDATION */
+
 names.forEach((name) => {
     name.addEventListener('input',() => {
         console.log(name.value);
@@ -35,6 +39,8 @@ names.forEach((name) => {
             name.setCustomValidity("");
     });
 });
+
+/* Form Submission */
 
 form.addEventListener('submit',(evt) => {
     evt.preventDefault();
