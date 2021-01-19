@@ -7,7 +7,8 @@ For now we have just made it for mobiles, so just compress the browser window in
 ## Info
 
 - server port : 3000
-- start cmd : npm start
-- start cmd for dev purposes : npm run dev
+- installation : `npm install` or `npm i`
+- start cmd : `npm start`
+- start cmd for dev purposes : `npm run dev`
 
 **Note: As it is in testing phase, failing condition have not been added for the result.**
